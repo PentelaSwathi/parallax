@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+        }
+       #main{
+        background-image: url('./imga1.jpg');
+        height:100vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center; 
+        align-content: center;
+         }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top:0px;
+        z-index: 2;
+    }
+    #main2{
+        background-image: url('./imga2.jpg');
+        height:100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+         
+    }
+    #main3{
+        background-image: url('./imga3.jpg');
+        height:100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        row-gap: 100px;
+        
+    }
+    h1{
+        text-align: center;
+      }
+    ul{
+      display: flex;
+      justify-content: center;
+      column-gap: 20px;
+     }
+     li{
+      list-style-type: none;
+    }
+     a{
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+     }
+    .whitebox{
+        background-color:rgba(255,255,255,0.6); 
+        height: 50%;
+        width: 50%;
+        display: flex;
+       justify-content: center; 
+       align-items: center; 
+       column-gap: 20px;
+    } 
+   .imgc{
+    display: flex;
+    flex-direction: column;
+    }
+   footer{
+    position:fixed;
+    bottom: 0px;
+    }
+ </style>
+</head>
+<body>
+    <div id="main">
+        <nav>
+       <h1>Adorable Puppies</h1>
+       <ul>
+        <li><a href="#main">playfull pups</a></li>
+        <li><a href="#main2">Sleepy pups</a></li>
+        <li><a href="#main3">Curious pups</a></li>
+       </ul>
+      </nav>
+       <div class="whitebox">
+           
+             <img src="./imga1.jpg" height="300px" width="300px">
+             <div class="imgc">
+             <h2>Playfull Puppies</h2>
+             <p>Puppies love to play!it's shows they learn about the world and develop important skills</p>
+           </div>
+       </div>
+    </div>
+    <div id="main2">
+       <div class="whitebox">
+              <div class="imgc">
+              <h2>Sleepy puppies</h2>
+              <p>Puppies need lot of sleep to grow big and strong.They can sleep up to 20 hours a day</p>
+              </div>
+              <img src="./imga2.jpg" height="300px" width="300px">
+        </div>
+     </div>
+     <div id="main3">
+        <div class="whitebox">
+                <img src="./imga3.jpg" height="300px" width="300px">
+                <div class="imgc">
+                <h2>Curious Puppies</h2>
+                <p>Puppies are  naturally Curious and love to explore thier surroundings.This helps them love to grow</p>
+                </div>
+        </div>
+        <footer style="background-color: black;width: 100%;">
+            <p style="color: white;text-align: center;">&copy;Puppies Parallax Demo</p>
+        </footer>
+     </div>
+     
+</body>
+</html>
